@@ -7,7 +7,8 @@
 
 </head>
 <body>
-        <button type="button" onclick="changeColor">'click'</button>
+        <button type="button" onclick="changeColor">'Mode magenta'</button>
+        <button type="button" onclick="changeColorBack">'Mode magenta'</button>
         <h1>This is the <em>best</em> motherfucking website.</h1>
         <p>Really, it is.</p>
         <h2>Seriously, you guys think that a fucking website doesn't need some styling?</h2>
@@ -132,10 +133,14 @@
               setTimeout(function(){ alert("Hello"); }, 3000);
               changeColor()
                 {
-                    document.getElementById('rbw').style.color = 
+                    document.getElementById('rbw').style.color = magenta
                     
                 }
-              setTimeout(changeColor,500)
+              changeColorBack()
+                {
+                    document.getElementById('rbw').style.color = null
+                }
+              
     </script>
 
         
