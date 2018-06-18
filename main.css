@@ -25,6 +25,32 @@ ul li img
     font-family: monospace;
     font-size: 0.95em
 }
+.block1
+{
+    font-weight: bold;
+    color: #444444
+}
+.block1::before
+{
+    content: "";
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-color: #444444
+}
+.block2
+{
+    font-weight: bold;
+    color: #454545;
+}
+.block2::before
+{
+    content: "";
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-color: #454545
+}
 .fauxparagraf
 {
     display: block;
