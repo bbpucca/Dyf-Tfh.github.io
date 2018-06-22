@@ -34,7 +34,7 @@
         <li>Images aren't forbidden, but when SVG is available <em>JUST USE IT</em>.</li>
         <li>Use <em>some</em> fucking
         <!-- hum hum hardcore ça -->
-        <span  id="rbw" style="color: rgb(250, 200, 250);">colors</span>.</li>
+        <span  id="rbw">colors</span>.</li>
         <li>Links don't really need to keep that <span class="bleu">shitty blue</span> the browser is giving them: nor that <span class="violet">violetish color</span> when they are marked as visited. Just give them a <a href="http://www.colorhexa.com/0077aa">nice color</a></li>
         </ul>
 
@@ -144,11 +144,10 @@
             }
             function changeCL()
             { 
-            var leanbox = randomIntFromInterval(0,999999);
-            
-            document.getElementById('rbw').style.color = "#"+leanbox;
+            var tablo = [randomIntFromInterval(0,255),randomIntFromInterval(0,255),randomIntFromInterval(0,255)];
+            document.getElementById('rbw').style.color = `rgb(${tablo})`;
             }
-            setInterval(changeCL(),1000);
+            setInterval(changeCL,500);
 
             function psych(){
                 document.body.style.backgroundColor = '#ff00ff';
