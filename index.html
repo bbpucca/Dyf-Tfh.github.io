@@ -10,10 +10,7 @@
         <button type="button" class="bott">Mode psych</button>
         <button type="button" class="wof">Mode contraste faible</button>
         <button type="button" class="inv">Mode inversé</button>
-<<<<<<< HEAD
         <a href="javascript:void(0)" class = "invertedMode" >Inverted Mode</a>
-=======
->>>>>>> df980f217f2337a02c190b7bcf8744ceccb027e2
         <h1>This is the <em>best</em> motherfucking website.</h1>
         <p>Really, it is.</p>
         <h2>Seriously, you guys think that a fucking website doesn't need some styling?</h2>
@@ -150,94 +147,7 @@
             var tablo = [randomIntFromInterval(0,255),randomIntFromInterval(0,255),randomIntFromInterval(0,255)];
             document.getElementById('rbw').style.color = `rgb(${tablo})`;
             }
-<<<<<<< HEAD
         setInterval(changeCL,500);
-=======
-            setInterval(changeCL,500);
-
-            function psych(){
-                document.body.style.backgroundColor = '#ff00ff';
-                document.body.style.color = 'rgb(0,0,255)';
-                document.body.style.fontFamily = 'fantasy';
-
-            }
-            function depsych()
-            {
-                document.body.style.backgroundColor = null;
-                document.body.style.color = null;
-                document.body.style.fontFamily = null;
-            }
-            function inversion()
-            {
-                document.body.style.color='#ffffff';
-                document.body.style.backgroundColor='#000000';
-            }
-            function deinversion()
-            {
-                document.body.style.color=null;
-                document.body.style.backgroundColor=null;
-            }
-            /*function changeMode(classname,changestyle,dechangestyle,nomMode)
-            {
-                var boutonInt = document.querySelector(`.${classname}`);
-                boutonInt.addEventListener("click",function superfonction(){
-                    if (boutonInt.textContent === nomMode){
-                        changestyle;
-                        boutonInt.textContent = "Mode normal"
-                    }
-                    else
-                    {
-                        dechangestyle;
-                        boutonInt.textContent = nomMode;
-                    }
-                })
-            }
-            changeMode(inv,inversion,deinversion,"Mode inversé")
-            */
-            var inv = document.querySelector(".inv");
-            inv.addEventListener("click",inversionl);
-            function inversionl()
-            {
-                if (inv.textContent === "Mode inversé")
-                {
-                inversion();
-                inv.textContent = "Mode normal";
-                }
-                else
-                {  
-                deinversion();
-                inv.textContent = "Mode inversé";
-                }
-            }
-            var inpbutotxt = document.querySelector(".bott");
-            inpbutotxt.addEventListener("click",nvup2);
-            function nvup2()
-            {
-                if (inpbutotxt.textContent === "Mode psych"){
-                    psych();
-                    inpbutotxt.textContent = "Mode normal";
-                }
-                else{
-                    depsych();
-                    inpbutotxt.textContent = "Mode psych";
-                }
-
-            }
-            var truc = document.querySelector(".wof");
-            truc.addEventListener("click",jenaimar);
-            function jenaimar()
-            {
-                if (truc.textContent === "Mode contraste faible"){
-                    document.body.style.color='#464646';
-                    truc.textContent = "Mode normal";
-                }
-                else{
-                    document.body.style.color=null;
-                    truc.textContent = "Mode contraste faible";
-                }
-
-            }
->>>>>>> df980f217f2337a02c190b7bcf8744ceccb027e2
     </script>
     <script src="main.js"></script>
 
