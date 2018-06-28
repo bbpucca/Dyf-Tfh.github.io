@@ -19,6 +19,15 @@
                 document.body.style.color='#ffffff';
                 document.body.style.backgroundColor='#000000';
             }
+            function contrastfaible(){
+                document.body.style = null;
+                var titre = document.querySelectorAll("h2");
+                titre.forEach(function(element){element.style.color = null});
+                var titre1 = document.querySelectorAll("h1");
+                titre1.forEach(function(element){element.style.color = null});
+                document.body.style.color='#464646';
+                wof.textContent = "Mode normal";
+            }
             function normal()
             {
                 document.body.style = null;
@@ -63,12 +72,7 @@
             function jenaimarfct()
             {
                 if (wof.textContent === "Mode contraste faible"){
-                    document.body.style = null;
-                    var titre = document.querySelectorAll("h2");
-                    titre.forEach(function(element){element.style.color = null});
-                    var titre1 = document.querySelectorAll("h1");
-                    titre1.forEach(function(element){element.style.color = null});
-                    document.body.style.color='#464646';
+                    contrastfaible();
                     wof.textContent = "Mode normal";
                 }
                 else{
