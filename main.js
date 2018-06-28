@@ -28,6 +28,11 @@
                 var titre1 = document.querySelectorAll("h1");
                 titre1.forEach(function(element){element.style.color = null});
             }
+            function resetname(){
+                bott.textContent ="Mode psych"
+                inv.textContent ="Mode inversé"
+                wof.textContent ="Mode contraste faible"
+            }
            //je sais c'est ultra moche le code des fonctions qui changent de mode, surtout le nom des variables
             var inv = document.querySelector(".inv");
             inv.addEventListener("click",inversionfct);
@@ -40,9 +45,7 @@
                 }else 
                 {  
                 normal();
-                bott.textContent ="Mode psych"
-                inv.textContent ="Mode inversé"
-                wof.textContent ="Mode contraste faible"
+                resetname();
                 }
             }
             var bott = document.querySelector(".bott");
@@ -56,9 +59,7 @@
                 else
                 {
                     normal();
-                    bott.textContent ="Mode psych"
-                    inv.textContent ="Mode inversé"
-                    wof.textContent ="Mode contraste faible"
+                    resetname();
                 }
 
             }
@@ -72,9 +73,7 @@
                 }
                 else{
                     normal();
-                    bott.textContent ="Mode psych"
-                    inv.textContent ="Mode inversé"
-                    wof.textContent ="Mode contraste faible"
+                    resetname();
                 }
             }
 // essai pour faire un truc plus stylé mais ki marche pa     
