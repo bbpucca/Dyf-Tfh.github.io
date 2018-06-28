@@ -10,7 +10,6 @@
         <button type="button" class="bott">Mode psych</button>
         <button type="button" class="wof">Mode contraste faible</button>
         <button type="button" class="inv">Mode inversé</button>
-        <a href="javascript:void(0)" class = "invertedMode" >Inverted Mode</a>
         <h1>This is the <em>best</em> motherfucking website.</h1>
         <p>Really, it is.</p>
         <h2>Seriously, you guys think that a fucking website doesn't need some styling?</h2>
@@ -102,7 +101,7 @@
        <p> Despite what was said here they're beautiful and truly among the best websites on the internet 
            (even though this is still <span class="mfw">thebestmotherfuckingwebsite</span>), so go check 'em out.</p>
 
-        <p>Seriously, follow some of the advice we gave you, they'll "make the web great again" Cit. needed</p>
+        <p>Seriously, follow some of the advice we gave you, they'll "make the web great again" <span class= "cit">Cit. needed</span></p>
         <h2>Author</h2>
 
         <p>This website was created by an annoyed developer that can be followed on Twitter, 
@@ -134,7 +133,7 @@
             <li><a href="https://github.com/glodime">@glodime</a> for his suggestion about <a href="https://github.com/denysvitali/thebestmotherfuckingwebsite/issues/12">text justification on mobile</a></li>
             <li><a href="https://github.com/arthurtiteica">@arthurtiteica</a> and <a href="https://github.com/vktec">@vktec</a> for their suggestions about <a href="https://github.com/denysvitali/thebestmotherfuckingwebsite/issues/9">PIN Code</a> / <a href="https://en.wikipedia.org/wiki/RAS_syndrome">RAS Syndrome</a> fix.</li>
             <li><span><a href="https://github.com/Zsavajji">@Zsavajji</a></span><span class="separator">, </span><span><a href="https://github.com/CapacitorSet">@CapacitorSet</a></span><span class="separator">, </span><span><a href="https://github.com/danielquinn">@danielquinn</a></span><span class="separator">, </span><span><a href="https://github.com/ehea617">@ehea617</a></span><span class="separator">, </span><span><a href="https://github.com/MrSaad">@MrSaad</a></span><span class="separator">, </span><span><a href="https://github.com/tqdv">@tqdv</a></span><span> for <a href="https://github.com/denysvitali/thebestmotherfuckingwebsite/pulls?q=is%3Apr+is%3Aclosed+label%3A%22spell+checking%22">their help in spell checking</a></span></li>
-            <li>Le type qui a fait le site avant moi.</li>
+            <li>Le type qui a fait le site avant que je le refasse.</li>
         </ul>
     <script>
         setTimeout(function(){ alert("Hey le site xxxvidsxxx est trop bien. Viens dessus stp please"); }, 10000);
@@ -142,7 +141,7 @@
             {
             return Math.floor(Math.random()*(max-min+1)+min);
             }
-            function changeCL()
+        function changeCL()
             { 
             var tablo = [randomIntFromInterval(0,255),randomIntFromInterval(0,255),randomIntFromInterval(0,255)];
             document.getElementById('rbw').style.color = `rgb(${tablo})`;

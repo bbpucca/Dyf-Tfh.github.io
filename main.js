@@ -5,61 +5,78 @@
                 document.body.style.backgroundColor = '#ff00ff';
                 document.body.style.color = 'rgb(0,0,255)';
                 document.body.style.fontFamily = 'fantasy';
+                var titre = document.querySelectorAll("h2");
+                titre.forEach(function(element){element.style.color = '#5EFB6E'});
+                var titre1 = document.querySelectorAll("h1");
+                titre1.forEach(function(element){element.style.color = '#5EFB6E'});
             }
             function inversion()
-            {
+            {   document.body.style = null;
+                var titre = document.querySelectorAll("h2");
+                titre.forEach(function(element){element.style.color = null});
+                var titre1 = document.querySelectorAll("h1");
+                titre1.forEach(function(element){element.style.color = null});
                 document.body.style.color='#ffffff';
                 document.body.style.backgroundColor='#000000';
             }
             function normal()
             {
                 document.body.style = null;
+                var titre = document.querySelectorAll("h2");
+                titre.forEach(function(element){element.style.color = null});
+                var titre1 = document.querySelectorAll("h1");
+                titre1.forEach(function(element){element.style.color = null});
+                bott.textContent ="Mode psych"
+                inv.textContent ="Mode inversé"
+                wof.textContent ="Mode contraste faible"
             }
            //je sais c'est ultra moche le code des fonctions qui changent de mode, surtout le nom des variables
             var inv = document.querySelector(".inv");
-            inv.addEventListener("click",inversionl);
-            function inversionl()
+            inv.addEventListener("click",inversionfct);
+            function inversionfct()
             {
                 if (inv.textContent === "Mode inversé")
                 {
                 inversion();
-                inv.textContent = "Mode normal";
-                }
-                else
+                inv.textContent = "Mode normal"
+                }else 
                 {  
                 normal();
-                inv.textContent = "Mode inversé";
                 }
             }
-            var inpbutotxt = document.querySelector(".bott");
-            inpbutotxt.addEventListener("click",nvup2);
-            function nvup2()
+            var bott = document.querySelector(".bott");
+            bott.addEventListener("click",nvup2fct);
+            function nvup2fct()
             {
-                if (inpbutotxt.textContent === "Mode psych"){
+                if (bott.textContent === "Mode psych"){
                     psych();
-                    inpbutotxt.textContent = "Mode normal";
+                    bott.textContent = "Mode normal";
                 }
-                else{
+                else
+                {
                     normal();
-                    inpbutotxt.textContent = "Mode psych";
                 }
 
             }
-            var truc = document.querySelector(".wof");
-            truc.addEventListener("click",jenaimar);
-            function jenaimar()
+            var wof = document.querySelector(".wof");
+            wof.addEventListener("click",jenaimarfct);
+            function jenaimarfct()
             {
-                if (truc.textContent === "Mode contraste faible"){
+                if (wof.textContent === "Mode contraste faible"){
+                    document.body.style = null;
+                    var titre = document.querySelectorAll("h2");
+                    titre.forEach(function(element){element.style.color = null});
+                    var titre1 = document.querySelectorAll("h1");
+                    titre1.forEach(function(element){element.style.color = null});
                     document.body.style.color='#464646';
-                    truc.textContent = "Mode normal";
+                    wof.textContent = "Mode normal";
                 }
                 else{
                     normal();
-                    truc.textContent = "Mode contraste faible";
                 }
             }
 // essai pour faire un truc plus stylé mais ki marche pa     
- /*function changeMode(classname,changestyle,dechangestyle,nomMode)
+ /*function changeMode(classname,changestyle,nomMode)
             {
                 var boutonInt = document.querySelector(`.${classname}`);
                 boutonInt.addEventListener("click",function superfonction(){
@@ -69,19 +86,18 @@
                     }
                     else
                     {
-                        dechangestyle;
-                        boutonInt.textContent = nomMode;
+                        normal();
                     }
                 })
             }
-            changeMode(inv,inversion,deinversion,"Mode inversé")
-            
-*/
+            changeMode(inv,inversion,"Mode inversé")
+            changeMode(bott,psych,"Mode psych")
+     */       
 
 
 
 
-            var lienInverse = document.querySelector(".invertedMode")
+/*            var lienInverse = document.querySelector(".invertedMode")
             lienInverse.addEventListener("click",inversefct)
             function inversefct()
             {
@@ -90,3 +106,4 @@
                 
              }   
             }
+*/
