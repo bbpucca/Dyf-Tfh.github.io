@@ -11,20 +11,12 @@
                 titre1.forEach(function(element){element.style.color = '#5EFB6E'});
             }
             function inversion()
-            {   document.body.style = null;
-                var titre = document.querySelectorAll("h2");
-                titre.forEach(function(element){element.style.color = null});
-                var titre1 = document.querySelectorAll("h1");
-                titre1.forEach(function(element){element.style.color = null});
+            {   normal();
                 document.body.style.color='#ffffff';
                 document.body.style.backgroundColor='#000000';
             }
             function contrastfaible(){
-                document.body.style = null;
-                var titre = document.querySelectorAll("h2");
-                titre.forEach(function(element){element.style.color = null});
-                var titre1 = document.querySelectorAll("h1");
-                titre1.forEach(function(element){element.style.color = null});
+                normal();
                 document.body.style.color='#464646';
                 wof.textContent = "Mode normal";
             }
@@ -35,9 +27,6 @@
                 titre.forEach(function(element){element.style.color = null});
                 var titre1 = document.querySelectorAll("h1");
                 titre1.forEach(function(element){element.style.color = null});
-                bott.textContent ="Mode psych"
-                inv.textContent ="Mode inversé"
-                wof.textContent ="Mode contraste faible"
             }
            //je sais c'est ultra moche le code des fonctions qui changent de mode, surtout le nom des variables
             var inv = document.querySelector(".inv");
@@ -51,6 +40,9 @@
                 }else 
                 {  
                 normal();
+                bott.textContent ="Mode psych"
+                inv.textContent ="Mode inversé"
+                wof.textContent ="Mode contraste faible"
                 }
             }
             var bott = document.querySelector(".bott");
@@ -64,6 +56,9 @@
                 else
                 {
                     normal();
+                    bott.textContent ="Mode psych"
+                    inv.textContent ="Mode inversé"
+                    wof.textContent ="Mode contraste faible"
                 }
 
             }
@@ -77,6 +72,9 @@
                 }
                 else{
                     normal();
+                    bott.textContent ="Mode psych"
+                    inv.textContent ="Mode inversé"
+                    wof.textContent ="Mode contraste faible"
                 }
             }
 // essai pour faire un truc plus stylé mais ki marche pa     
